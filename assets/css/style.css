@@ -1,0 +1,500 @@
+/* Please read through the provided code below to understand it */
+
+/* QUESTION #3: PLACE SIDEBAR STYLES BELOW */
+
+
+.sidebar-container {
+	position:fixed;
+	width: 280px;
+	height: 100%;
+	background-color:: black;
+	transform: translateX(-280px);
+	z-index: 100;
+/**	transition: all 0.3s ease-out;
+**/
+	-webkit-transition: all 0.3s;
+	transform: translateX(-280px);
+
+}
+
+.sidebar-item {
+	font-weight: 700px;
+	font-size: 20px;
+	color: black;
+	padding: 50px;
+	border-bottom: black solid 1px;
+	text-align: center;
+	cursor: pointer;
+
+
+}
+
+/* QUESTION #4: PLACE CAROUSEL STYLES BELOW */
+
+.carousel-container {
+
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 100px;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+#carousel {
+	margin-top: 50px;
+	width: 4800px;
+	height: 100%;
+	margin-left: 0px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+
+}
+
+.carousel-item {
+
+	width: 960px;
+	position: relative;
+	height: 500px;
+	float: left;
+	border: 1px;
+
+}
+
+.background-square {
+	position: absolute;
+	height: 400px;
+	width: 600px;
+	margin-top: 150px;
+	/*
+	margin-left: -150px;
+	*/
+	background-color: #4DC0E4;
+	opacity: 0.5;
+}
+
+
+.learn-button {
+	background-color: white; /* Green */
+    color: black;
+    border: #8A8A8A 3px solid;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 95px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+
+
+}
+
+
+
+.section-title {
+	position: absolute;
+	float: left;
+	color: black;
+	top: 10%;
+    left: 15%;
+    z-index: 5;
+	font-family: 'Qwigley', cursive;
+	font-weight: 400;
+	font-size: 100px; /** 
+margin-top: 100px;
+margin-left: 100px;
+**/
+
+}
+
+.text-container {
+	position: absolute;
+	/*
+	margin-top: 225px;
+	margin-left: 150px;
+	*/
+	top: 35%;
+	left: 20%;
+	}
+
+.section-body {
+
+    letter-spacing: 1px;
+    width: 450px;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+
+}
+
+.section-subbody {
+	margin-top: 15px;
+	width: 250px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+
+}
+
+#section-line {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+/*
+	margin-top: 190px;
+	margin-left: 147px;
+	*/
+}
+
+#services-container {
+		left: 20%;
+
+}
+
+#portfolio-title {
+	position: absolute;
+	float: right;
+	color: black;
+	margin-top: 70px;
+    right: 15%;
+    z-index: 5;
+    font-family: 'Qwigley', cursive;
+	font-weight: 400;
+	font-size: 100px;
+}
+
+
+#portfolio-body {
+	text-align: right;
+
+}
+
+#portfolio-subbody {
+	text-align: right;
+	float: right;
+}
+
+.portfolio-container {
+	position: absolute;
+	float: right;
+	margin-top: 250px;
+	right: 15%;
+}
+/* QUESTION #5: PLACE "OTHER CSS" STYLES BELOW */
+
+#portfolio-square {
+	position: absolute;
+	float: right;
+	right: 0%;
+	height: 400px;
+	width: 600px;
+	margin-top: 150px;
+	background-color: #4DC0E4;
+	opacity: 0.5;
+}
+
+#portfolio-line {
+	position: absolute;
+	z-index: 5;
+	width: 250px;
+	height: 50px;
+	margin-top: 220px;
+	right: 15%;
+}
+
+#portfolio-learn {
+	position: relative;
+	left: 67%;
+	margin-top: 220px;
+}
+
+.section {
+	width: 100%;
+	height: 700px;
+	position: relative;
+
+}
+
+#title-section {
+	height: 620px;
+}
+
+#name-section {
+	color: black;
+}
+
+#major-section {
+	background-color: white;
+}
+
+#fact-section {
+	background-color: #fff;
+	height: 450px;
+}
+
+#fact-text{
+	background-color: black;
+}
+
+#name-text{
+	color: black;
+}
+
+/* DOCUMENT SET UP */
+
+body, html {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	min-width: 960px;
+	background-color: white;
+	-webkit-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-family: Lato;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+#fact-line {
+	margin-top: -260px;
+}
+
+.imag-line {
+	width: 250px;
+	height: 50px;
+	position: relative;
+}
+
+.img-icon {
+	height: 300px;
+	margin-top: 55px;
+
+}
+
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
+
+.img-title {
+	width: 100%;
+	z-index: -1;
+}
+
+.img-logo {
+	z-index: 5;
+	width: 60%;
+	display: block;
+	margin: auto;
+	position: absolute;
+	width: 50%;
+    top: 10%;
+    left: 25%;
+}
+
+.img-carousel {
+	width: 100%;
+	padding-top: 50px;
+}
+
+#logo-container{
+	background: #295473;
+	z-index: 4;
+	opacity: 0.5;
+	position: absolute;
+	height: 350px;
+	width: 70%;
+    left: 15%;
+    top: 10%;
+}
+
+.img-scaled-wh {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#title-border {
+	height: 30px; 
+	width: 100%;
+	color: white;
+	position: relative;
+	z-index: 6;
+	text-align: center;
+	background: #4DC0E4;
+	padding-top: 7px;
+	font-family: 'Fondamento', cursive;
+	font-size: 20px;
+	margin-top: -10px;
+	margin-bottom: 15px;
+
+}
+
+/* YOU DON'T NEED TO UNDERSTAND THE CODE BELOW */
+
+#nav-toggle { 
+	position: absolute; 
+	left: 50%; top: 50%; 
+}
+
+#nav-toggle {
+	padding: 18px 35px 20px 5px; 
+	background: #3D5E79;
+	border-radius: 5px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -10px; 
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+/* FREEBIES */
+
+/* Styling the Sidebar Button */
+#sidebar-button {
+	position: absolute;
+	background: black;
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+} 
+
+/* Overriding default styles on the ul */
+#menu-container ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	margin-top: 10px;
+
+}
+
+#menu-container {
+	position: absolute;
+	top: 15%;
+	left: 43%;
+	margin-top: -40px;
+
+}
+
+.page-wrapper {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+/* Styling for the carousel previous button */
+#carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 60px;
+    top: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+/* Styling for the carousel next button */
+#carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 60px;
+    top: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+/* Styling for the quotes and text in each section */
+.quote {
+	position: absolute;
+	font-size: 36px;
+	color: white;
+	font-weight: 700;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+
+/* Styling for the author text in each quote */
+.author {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* jQuery Manipulation Classes */
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.wrapper-active, .button-active {
+	
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+.end {
+	height: 200px;
+	background-color: #4DC0E4;
+	text-align: center;
+	padding-top: 200px;
+	color: white;
+}
+
+#login {
+	opacity: 0;
+	width: 5px;
+
+}
+
+.img-login-icon {
+	height: 150px;
+	paddint-left: 10px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
